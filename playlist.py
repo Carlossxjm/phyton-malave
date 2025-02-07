@@ -32,3 +32,4 @@ def eliminar_canciones():
         print('cancion eliminada:', cancion)
     print('¡Playlist actualizada!')
     print(playlist)
+app()
