@@ -19,5 +19,16 @@ def agregar_canciones():
             break
         playlist['canciones'].append(cancion)
         print('cancion agregada:', cancion)
-        print('¡Playlist creada!')
+    print('¡Playlist creada!')
+    print(playlist)
 
+def eliminar_canciones():
+    print('eliminando canciones de la playlist', playlist['nombre'])
+    while True:
+        cancion = input('ingresa el nombre de la cancion ( o "X" para salir): ')
+        if cancion.lower() == 'x':
+            break
+        playlist['canciones'].remove(cancion)
+        print('cancion eliminada:', cancion)
+    print('¡Playlist actualizada!')
+    print(playlist)
